@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark scroll-smooth">
+<head>
+  <!-- Character Encoding & Viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Metadata -->
+  <title id="meta-title">Yassine EL OUARDI — Analyste Développeur IBM i / AS400 | RPG Free · SQLRPGLE · DB2 for i</title>
+  <meta name="title" content="Yassine EL OUARDI — Analyste Développeur IBM i / AS400" />
+  <meta id="meta-desc" name="description" content="Portfolio technique de Yassine EL OUARDI, Analyste Développeur IBM i (RPG Free, SQLRPGLE, DB2 for i). Spécialiste applications de gestion financière (Paie, Trésorerie, Fiscalité RAS, Budgets)." />
+  <meta name="author" content="Yassine EL OUARDI" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#090b10" id="theme-color-meta" />
+
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://linkedin.com/in/yassine-el-ouardi-as400/" />
+  <meta property="og:title" content="Yassine EL OUARDI — Analyste Développeur IBM i / AS400" />
+  <meta property="og:description" content="Ingénierie applicative critique sur IBM i : RPG Free, SQLRPGLE, DB2 for i, fiscalité et gestion budgétaire. Certifié IBM." />
+  <meta property="og:image" content="./Photo_Identite_Yassine_EL_OUARDI.png" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+
+  <!-- Typography: IBM Plex Sans & IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0f62fe', // Authentic IBM Blue
+              hover: '#0353e9',
+              dark: '#002d9c',
+              soft: '#edf5ff',
+            }
+          },
+          fontFamily: {
+            sans: ['"IBM Plex Sans"', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yassine EL OUARDI",
+    "jobTitle": "Analyste Développeur IBM i / AS400",
+    "url": "https://www.linkedin.com/in/yassine-el-ouardi-as400/",
+    "image": "Photo_Identite_Yassine_EL_OUARDI.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Casablanca",
+      "addressCountry": "MA"
+    },
+    "email": "elouardii.yassine@gmail.com",
+    "telephone": "+212617207146",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "SOMADSI"
+    }
+  }
+  </script>
+
+  <style>
+    /* CSS Variables for Instant, Failsafe Dark/Light Theming */
+    :root {
+      --bg-ground: #090b10;
+      --bg-header: rgba(9, 11, 16, 0.95);
+      --bg-card: #10141e;
+      --bg-card-hover: #161c2a;
+      --border-color: #202738;
+      --border-light: #2c354d;
+      --text-heading: #ffffff;
+      --text-primary: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-subtle: #64748b;
+      --code-bg: #0c0f17;
+    }
+
+    html.light {
+      --bg-ground: #f8fafc;
+      --bg-header: rgba(248, 250, 252, 0.96);
+      --bg-card: #ffffff;
+      --bg-card-hover: #f1f5f9;
+      --border-color: #e2e8f0;
+      --border-light: #cbd5e1;
+      --text-heading: #0f172a;
+      --text-primary: #334155;
+      --text-muted: #475569;
+      --text-subtle: #64748b;
+      --code-bg: #f1f5f9;
+    }
+
+    body {
+      background-color: var(--bg-ground);
+      color: var(--text-primary);
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    .theme-card {
+      background-color: var(--bg-card);
+      border-color: var(--border-color);
+      transition: all 0.2s ease;
+    }
+    .theme-card:hover {
+      border-color: var(--border-light);
+    }
+
+    .theme-border {
+      border-color: var(--border-color);
+    }
+
+    .theme-header {
+      background-color: var(--bg-header);
+      border-color: var(--border-color);
+    }
+
+    .theme-heading {
+      color: var(--text-heading);
+    }
+
+    .theme-muted {
+      color: var(--text-muted);
+    }
+
+    .theme-subtle {
+      color: var(--text-subtle);
+    }
+
+    ::selection {
+      background-color: #0f62fe;
+      color: #ffffff;
+    }
+
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-ground);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border-color);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0f62fe;
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid #0f62fe;
+      outline-offset: 2px;
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-border {
+        border-color: #cbd5e1 !important;
+      }
+      a {
+        text-decoration: underline !important;
+        color: #000000 !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased min-h-screen">
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-brand text-white font-mono text-xs rounded shadow-lg" data-i18n="skip_link">
+    Passer directement au contenu principal
+  </a>
+
+  <!-- Top Announcement Bar / Availability Header -->
+  <aside class="no-print theme-border border-b text-xs font-mono py-2 px-4 sm:px-8 theme-muted flex flex-wrap items-center justify-between gap-3" style="background-color: var(--bg-card);">
+    <div class="flex items-center gap-2.5">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-500" aria-hidden="true"></span>
+      <span class="theme-heading font-medium" data-i18n="banner_status_lbl">Statut :</span>
+      <span data-i18n="banner_status_val">Casablanca, Maroc · Ouvert aux opportunités d'ingénierie (CDI / Mission technique)</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <span class="hidden sm:inline theme-subtle" data-i18n="banner_scope">Périmètre : RPG Free · SQLRPGLE · DB2 for i · Finance</span>
+      <a href="https://www.linkedin.com/in/yassine-el-ouardi-as400/" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline inline-flex items-center gap-1 font-medium">
+        LinkedIn &nearr;
+      </a>
+    </div>
+  </aside>
+
+  <!-- Primary Header & Navigation -->
+  <header class="no-print sticky top-0 z-40 theme-header backdrop-blur-md border-b">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Brand Identifier -->
+      <a href="#" class="flex items-center gap-3 group" aria-label="Accueil portfolio Yassine EL OUARDI">
+        <div class="w-8 h-8 rounded theme-card border text-brand font-mono font-semibold flex items-center justify-center text-xs group-hover:border-brand transition-colors">
+          YE
+        </div>
+        <div class="leading-none">
+          <span class="font-semibold text-sm tracking-tight theme-heading block group-hover:text-brand transition-colors">
+            Yassine EL OUARDI
+          </span>
+          <span class="text-[11px] font-mono theme-muted mt-0.5 block" data-i18n="nav_role">
+            Analyste Développeur IBM i
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 text-xs font-mono theme-muted" aria-label="Navigation principale">
+        <a href="#profil" class="hover:text-brand transition-colors" data-i18n="nav_profile">01. Profil</a>
+        <a href="#missions" class="hover:text-brand transition-colors" data-i18n="nav_missions">02. Réalisations</a>
+        <a href="#competences" class="hover:text-brand transition-colors" data-i18n="nav_skills">03. Compétences</a>
+        <a href="#certifications" class="hover:text-brand transition-colors" data-i18n="nav_certifications">04. Certifications</a>
+        <a href="#contact" class="hover:text-brand transition-colors" data-i18n="nav_contact">05. Contact</a>
+      </nav>
+
+      <!-- Action Controls: Language Toggle + Theme Toggle + CV Button -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Language Switcher [ FR | EN ] -->
+        <div class="flex items-center p-0.5 rounded-lg border theme-border font-mono text-xs" style="background-color: var(--bg-card);">
+          <button 
+            id="lang-btn-fr" 
+            onclick="setLanguage('fr')" 
+            class="px-2 py-1 rounded font-semibold text-[11px] transition-all bg-brand text-white"
+            aria-label="Basculer en Français"
+          >
+            FR
+          </button>
+          <button 
+            id="lang-btn-en" 
+            onclick="setLanguage('en')" 
+            class="px-2 py-1 rounded font-semibold text-[11px] transition-all theme-muted hover:text-brand"
+            aria-label="Switch to English"
+          >
+            EN
+          </button>
+        </div>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button
+          id="theme-toggle-btn"
+          onclick="toggleTheme()"
+          class="p-2 rounded-lg border theme-border theme-card theme-muted hover:text-brand transition-all flex items-center justify-center"
+          title="Changer de mode (Jour / Nuit)"
+          aria-label="Changer de mode (Jour / Nuit)"
+        >
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg id="icon-sun" class="w-4 h-4 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg id="icon-moon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+
+        <!-- CV Button -->
+        <a
+          href="./CV_Yassine_EL_Ouardi_Analyste_Developpeur_IBM_i_AS400.pdf"
+          download="CV_Yassine_EL_Ouardi_IBM_i.pdf"
+          class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded theme-card border hover:border-brand text-xs font-mono font-medium transition-all"
+          title="Télécharger le curriculum vitae officiel au format PDF"
+        >
+          <svg class="w-3.5 h-3.5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+          <span data-i18n="nav_cv_btn">CV (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="max-w-6xl mx-auto px-4 sm:px-8 py-12 md:py-16 space-y-24">
+
+    <!-- ================================================================= -->
+    <!-- SECTION 01: HERO & IDENTITY                                       -->
+    <!-- ================================================================= -->
+    <section id="profil" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- Left Column: Editorial Summary & Positioning -->
+      <div class="lg:col-span-8 space-y-6">
+        
+        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded theme-card border text-xs font-mono theme-muted">
+          <span data-i18n="hero_system">SYSTÈME : IBM i / AS400</span>
+          <span class="theme-subtle">·</span>
+          <span class="text-brand font-medium" data-i18n="hero_env">ENVIRONNEMENT : PRODUCTION & FINANCE</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight theme-heading leading-[1.15]" data-i18n="hero_title">
+          Développement d'applications de gestion critiques sur IBM i.
+        </h1>
+
+        <p class="text-base sm:text-lg theme-muted font-normal leading-relaxed max-w-2xl" data-i18n="hero_desc">
+          Analyste Développeur spécialisé dans les environnements financiers et de gestion (Paie, Trésorerie, Fiscalité RAS et Budgets étatiques). 
+          J'interviens de l'analyse fonctionnelle à la mise en exploitation : RPG Free Format, SQLRPGLE, DB2 for i, 
+          maintenance, tests et contrôles de cohérence des données.
+        </p>
+
+        <!-- Technical Specification Card / Metadata -->
+        <div class="border theme-border theme-card rounded-lg p-5 font-mono text-xs divide-y theme-border space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2">
+            <span class="theme-subtle" data-i18n="spec_title_role">POSTE ACTUEL</span>
+            <span class="theme-heading font-medium" data-i18n="spec_val_role">Analyste Développeur IBM i / RPG Free — SOMADSI (Casablanca)</span>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pt-3 pb-2">
+            <span class="theme-subtle" data-i18n="spec_title_exp">EXPÉRIENCE CONCRÈTE</span>
+            <span class="theme-heading font-medium" data-i18n="spec_val_exp">3+ années sur ERP de gestion, calculs fiscaux (RAS) & budget (OFPPT)</span>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pt-3 pb-2">
+            <span class="theme-subtle" data-i18n="spec_title_tech">PARADIGME TECHNIQUE</span>
+            <span class="theme-heading font-medium" data-i18n="spec_val_tech">RPG IV modulaire, ILE, embedded SQL, procédures libres, triggers DB2</span>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pt-3">
+            <span class="theme-subtle" data-i18n="spec_title_edu">FORMATION AVANCÉE</span>
+            <span class="theme-heading font-medium" data-i18n="spec_val_edu">Master Pro SAAICC (Cloud & Sécurité) · Certifié IBM Z & IBM i</span>
+          </div>
+        </div>
+
+        <!-- Action Links -->
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a
+            href="#missions"
+            class="px-5 py-2.5 rounded bg-brand hover:bg-brand-hover text-white text-xs font-mono font-medium transition-colors inline-flex items-center gap-2"
+          >
+            <span data-i18n="btn_explore">Consulter les réalisations techniques</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+
+          <a
+            href="./CV_Yassine_EL_Ouardi_Analyste_Developpeur_IBM_i_AS400.pdf"
+            download="CV_Yassine_EL_Ouardi_IBM_i.pdf"
+            class="px-5 py-2.5 rounded theme-card border hover:border-slate-500 text-xs font-mono font-medium transition-colors inline-flex items-center gap-2"
+          >
+            <svg class="w-3.5 h-3.5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <span data-i18n="btn_download_cv">Télécharger mon CV complet (PDF)</span>
+          </a>
+
+          <a
+            href="#contact"
+            class="px-4 py-2.5 rounded theme-card border text-xs font-mono font-medium transition-colors theme-muted hover:text-brand"
+            data-i18n="btn_contact_me"
+          >
+            Me contacter
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Structured Portrait & Verified Badge -->
+      <div class="lg:col-span-4">
+        <div class="border theme-border theme-card rounded-lg p-4 space-y-4">
+          
+          <div class="aspect-square rounded overflow-hidden border theme-border relative" style="background-color: var(--bg-ground);">
+            <img
+              src="./Photo_Identite_Yassine_EL_OUARDI.png"
+              alt="Portrait professionnel de Yassine EL OUARDI - Analyste Développeur IBM i"
+              width="400"
+              height="400"
+              loading="eager"
+              class="w-full h-full object-cover grayscale-[15%] hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
+
+          <div class="space-y-1.5 font-mono text-xs">
+            <div class="theme-heading font-medium text-sm">Yassine EL OUARDI</div>
+            <div class="theme-muted text-[11px]" data-i18n="card_location">Casablanca, Maroc</div>
+            <div class="theme-subtle text-[11px] pt-1">
+              <span data-i18n="lbl_email">Courriel :</span> <a href="mailto:elouardii.yassine@gmail.com" class="hover:text-brand underline font-medium">elouardii.yassine@gmail.com</a>
+            </div>
+            <div class="theme-subtle text-[11px]">
+              <span data-i18n="lbl_phone">Tél :</span> <a href="tel:+212617207146" class="hover:text-brand">+212 6 17 20 71 46</a>
+            </div>
+          </div>
+
+          <div class="border-t theme-border pt-3 flex items-center justify-between text-[11px] font-mono">
+            <span class="text-emerald-500 flex items-center gap-1.5 font-medium">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              <span data-i18n="badge_ibm_verified">Profil IBM vérifié</span>
+            </span>
+            <a href="https://www.linkedin.com/in/yassine-el-ouardi-as400/" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline font-medium" data-i18n="link_linkedin">
+              Voir LinkedIn &rarr;
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 02: RÉALISATIONS & ÉTUDES DE CAS                          -->
+    <!-- ================================================================= -->
+    <section id="missions" class="space-y-8">
+      
+      <div class="border-b theme-border pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-brand block mb-1 font-semibold" data-i18n="sec_missions_tag">02 / ÉTUDES DE CAS</span>
+          <h2 class="text-2xl sm:text-3xl font-bold theme-heading tracking-tight" data-i18n="sec_missions_title">
+            Réalisations & Missions en Production
+          </h2>
+        </div>
+        <p class="text-xs font-mono theme-subtle" data-i18n="sec_missions_sub">
+          Format : Contexte &rarr; Implémentation technique &rarr; Résultat mesurable
+        </p>
+      </div>
+
+      <div class="space-y-6">
+
+        <!-- Case 1: RAS Retenue à la source -->
+        <article class="border theme-border theme-card rounded-lg p-6 sm:p-8 space-y-5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b theme-border pb-4">
+            <div>
+              <span class="text-[11px] font-mono text-brand uppercase tracking-wider font-semibold" data-i18n="m1_badge">Mission Réglementaire & Fiscale</span>
+              <h3 class="text-xl font-bold theme-heading mt-0.5" data-i18n="m1_title">
+                Automatisation du Calcul de la Retenue à la Source (RAS) sur IBM i
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">IBM i / AS400</span>
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">RPGLE</span>
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">DB2 for i</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold theme-muted uppercase tracking-wider" data-i18n="m1_h_ctx">01. Contexte & Problématique</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m1_p_ctx">
+                Mise en conformité avec les nouvelles règles fiscales exigeant l'application d'un taux de retenue à la source distinct selon le statut juridique du bénéficiaire, la nature de la prestation et des seuils d'exonération spécifiques.
+              </p>
+            </div>
+
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold text-brand uppercase tracking-wider" data-i18n="m1_h_sol">02. Solution Technique RPGLE</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m1_p_sol">
+                Développement d'une sous-procédure RPGLE dédiée et modulaire. Isolation de la logique fiscale, gestion rigoureuse des cas limites (arrondis, exonérations partielles, tiers multiples) et intégration directe dans la chaîne de facturation.
+              </p>
+            </div>
+
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold text-emerald-500 uppercase tracking-wider" data-i18n="m1_h_res">03. Validation & Impact</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m1_p_res">
+                Élaboration d'un banc de test automatisé avec comparaison miroir contre un modèle de calcul indépendant. Recette validée sans réserve, zéro anomalie de déclaration et conformité fiscale certifiée.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 2: OFPPT Nomenclature Budgétaire -->
+        <article class="border theme-border theme-card rounded-lg p-6 sm:p-8 space-y-5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b theme-border pb-4">
+            <div>
+              <span class="text-[11px] font-mono text-brand uppercase tracking-wider font-semibold" data-i18n="m2_badge">Secteur Public & Gestion Budgétaire</span>
+              <h3 class="text-xl font-bold theme-heading mt-0.5" data-i18n="m2_title">
+                Refonte de la Nomenclature Budgétaire & Ordonnancement (OFPPT)
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">RPG Free</span>
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">SQL Embedded</span>
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">Crystal Reports</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold theme-muted uppercase tracking-wider" data-i18n="m2_h_ctx">01. Contexte & Problématique</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m2_p_ctx">
+                Transition structurelle vers une nouvelle nomenclature budgétaire étatique, imposant de requalifier l'ensemble des imputations financières sans bloquer les engagements de dépenses ni les ordres de paiement en cours.
+              </p>
+            </div>
+
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold text-brand uppercase tracking-wider" data-i18n="m2_h_sol">02. Solution Technique RPGLE</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m2_p_sol">
+                Mise à jour des règles de gestion en RPG Free et SQLRPGLE. Création de scripts SQL de contrôle de cohérence pour auditer les tables DB2, identifier les écarts de clés budgétaires et générer les états comparatifs multi-exercices.
+              </p>
+            </div>
+
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold text-emerald-500 uppercase tracking-wider" data-i18n="m2_h_res">03. Validation & Impact</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m2_p_res">
+                Fiabilisation à 100% des situations budgétaires périodiques et des ordonnancements de paiement. Validation complète par les contrôleurs de gestion et les responsables financiers.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 3: Maintenance Évolutive ERP SOMADSI -->
+        <article class="border theme-border theme-card rounded-lg p-6 sm:p-8 space-y-5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b theme-border pb-4">
+            <div>
+              <span class="text-[11px] font-mono text-brand uppercase tracking-wider font-semibold" data-i18n="m3_badge">Activité Continue (03/2023 - Présent)</span>
+              <h3 class="text-xl font-bold theme-heading mt-0.5" data-i18n="m3_title">
+                Maintenance Applicative & Optimisation ERP de Gestion (SOMADSI)
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">RPG Free Format</span>
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">SQLRPGLE</span>
+              <span class="px-2.5 py-1 rounded theme-card border theme-border theme-muted">SQL Server / VB.NET</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold theme-muted uppercase tracking-wider" data-i18n="m3_h_ctx">01. Périmètre Métier</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m3_p_ctx">
+                Responsabilité du cycle de vie des modules applicatifs clés : Paie, Comptabilité générale et auxiliaire, Trésorerie, déclarations de TVA et facturation commerciale.
+              </p>
+            </div>
+
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold text-brand uppercase tracking-wider" data-i18n="m3_h_sol">02. Interventions Techniques</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m3_p_sol">
+                Développement d'évolutions applicatives en RPG Free Format, optimisation des plans d'accès SQL pour les extractions de données lourdes, correction d'incidents de production et accompagnement des utilisateurs en recette.
+              </p>
+            </div>
+
+            <div class="space-y-1.5">
+              <h4 class="font-mono text-xs font-semibold text-emerald-500 uppercase tracking-wider" data-i18n="m3_h_res">03. Bénéfice Opérationnel</h4>
+              <p class="theme-primary leading-relaxed text-xs" data-i18n="m3_p_res">
+                Réduction notable des délais de traitement des batchs de fin de mois, fiabilisation des clôtures périodiques et maintien d'un niveau élevé de disponibilité applicative.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 03: MATRICE DES COMPÉTENCES TECHNIQUES                    -->
+    <!-- ================================================================= -->
+    <section id="competences" class="space-y-8">
+      
+      <div class="border-b theme-border pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-brand block mb-1 font-semibold" data-i18n="sec_skills_tag">03 / QUALIFICATIONS</span>
+          <h2 class="text-2xl sm:text-3xl font-bold theme-heading tracking-tight" data-i18n="sec_skills_title">
+            Environnement Technique & Domaines Métiers
+          </h2>
+        </div>
+        <p class="text-xs font-mono theme-subtle" data-i18n="sec_skills_sub">
+          Référentiel des technologies et domaines de gestion maîtrisés
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Column 1: IBM i Core -->
+        <div class="border theme-border theme-card rounded-lg p-5 space-y-4">
+          <div class="border-b theme-border pb-3">
+            <span class="text-xs font-mono text-brand uppercase font-semibold" data-i18n="sk_col1_tag">01. Cœur IBM i / AS400</span>
+            <div class="text-sm font-bold theme-heading mt-0.5" data-i18n="sk_col1_title">Architecture & Langages</div>
+          </div>
+          <ul class="font-mono text-xs theme-primary space-y-2">
+            <li class="flex items-center justify-between">
+              <span>RPG Free Format</span>
+              <span class="text-brand text-[10px]" data-i18n="lvl_expert">Expertise</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>RPGLE & SQLRPGLE</span>
+              <span class="text-brand text-[10px]" data-i18n="lvl_advanced">Avancé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>DB2 for i (DDS, SQL DDL)</span>
+              <span class="text-brand text-[10px]" data-i18n="lvl_advanced">Avancé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_cl">CL / CLP (Commandes & Jobs)</span>
+              <span class="theme-muted text-[10px]" data-i18n="lvl_operational">Opérationnel</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_sql_opt">Optimisation requêtes SQL</span>
+              <span class="text-brand text-[10px]" data-i18n="lvl_advanced">Avancé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_prod_supp">Support de production</span>
+              <span class="text-brand text-[10px]" data-i18n="lvl_practiced">Pratiqué</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Business & Finance -->
+        <div class="border theme-border theme-card rounded-lg p-5 space-y-4">
+          <div class="border-b theme-border pb-3">
+            <span class="text-xs font-mono text-emerald-500 uppercase font-semibold" data-i18n="sk_col2_tag">02. Domaines Métiers</span>
+            <div class="text-sm font-bold theme-heading mt-0.5" data-i18n="sk_col2_title">Finance & Gestion</div>
+          </div>
+          <ul class="font-mono text-xs theme-primary space-y-2">
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_payroll">Paie & Cotisations sociales</span>
+              <span class="text-emerald-500 text-[10px]" data-i18n="lvl_mastered">Maîtrisé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_ras">Retenue à la source (RAS)</span>
+              <span class="text-emerald-500 text-[10px]" data-i18n="lvl_mastered">Maîtrisé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_acct">Comptabilité générale & aux.</span>
+              <span class="text-emerald-500 text-[10px]" data-i18n="lvl_mastered">Maîtrisé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_treasury">Trésorerie & Rapprochements</span>
+              <span class="text-emerald-500 text-[10px]" data-i18n="lvl_mastered">Maîtrisé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_vat">Déclarations TVA</span>
+              <span class="text-emerald-500 text-[10px]" data-i18n="lvl_mastered">Maîtrisé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_budget">Exécution budgétaire (OFPPT)</span>
+              <span class="text-emerald-500 text-[10px]" data-i18n="lvl_mastered">Maîtrisé</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Data & Integrations -->
+        <div class="border theme-border theme-card rounded-lg p-5 space-y-4">
+          <div class="border-b theme-border pb-3">
+            <span class="text-xs font-mono text-cyan-500 uppercase font-semibold" data-i18n="sk_col3_tag">03. Données & Outils</span>
+            <div class="text-sm font-bold theme-heading mt-0.5" data-i18n="sk_col3_title">Bases & Reporting</div>
+          </div>
+          <ul class="font-mono text-xs theme-primary space-y-2">
+            <li class="flex items-center justify-between">
+              <span>SQL Server & Transact-SQL</span>
+              <span class="text-cyan-500 text-[10px]" data-i18n="lvl_advanced">Avancé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>MySQL, PostgreSQL, MongoDB</span>
+              <span class="theme-muted text-[10px]" data-i18n="lvl_operational">Opérationnel</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>Crystal Reports (Reporting)</span>
+              <span class="text-cyan-500 text-[10px]" data-i18n="lvl_advanced">Avancé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>Microsoft Access</span>
+              <span class="theme-muted text-[10px]" data-i18n="lvl_operational">Opérationnel</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_db2_integrity">Contrôles d'intégrité DB2</span>
+              <span class="text-cyan-500 text-[10px]" data-i18n="lvl_advanced">Avancé</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_budget_extract">Extractions budgétaires</span>
+              <span class="text-cyan-500 text-[10px]" data-i18n="lvl_advanced">Avancé</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Modern Ecosystem -->
+        <div class="border theme-border theme-card rounded-lg p-5 space-y-4">
+          <div class="border-b theme-border pb-3">
+            <span class="text-xs font-mono text-amber-500 uppercase font-semibold" data-i18n="sk_col4_tag">04. Écosystème Global</span>
+            <div class="text-sm font-bold theme-heading mt-0.5" data-i18n="sk_col4_title">Langages & Méthodes</div>
+          </div>
+          <ul class="font-mono text-xs theme-primary space-y-2">
+            <li class="flex items-center justify-between">
+              <span>VB.NET / C#</span>
+              <span class="text-amber-500 text-[10px]" data-i18n="lvl_operational">Opérationnel</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>JavaScript / Node.js / React</span>
+              <span class="text-amber-500 text-[10px]" data-i18n="lvl_operational">Opérationnel</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>Java</span>
+              <span class="theme-muted text-[10px]" data-i18n="lvl_fundamentals">Bases</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_agile">Méthodes Agile / Scrum</span>
+              <span class="theme-muted text-[10px]" data-i18n="lvl_practiced">Pratiqué</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_merise">Modélisation Merise / UML</span>
+              <span class="theme-muted text-[10px]" data-i18n="lvl_practiced">Pratiqué</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span data-i18n="sk_cloud">Cloud & Sécurité (Master)</span>
+              <span class="text-amber-500 text-[10px]" data-i18n="lvl_specialized">Spécialisé</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 04: CERTIFICATIONS OFFICIELLES & CURSUS ACADÉMIQUE       -->
+    <!-- ================================================================= -->
+    <section id="certifications" class="space-y-8">
+      
+      <div class="border-b theme-border pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-brand block mb-1 font-semibold" data-i18n="sec_cert_tag">04 / QUALIFICATIONS FORMELLES</span>
+          <h2 class="text-2xl sm:text-3xl font-bold theme-heading tracking-tight" data-i18n="sec_cert_title">
+            Certifications IBM & Diplômes
+          </h2>
+        </div>
+        <p class="text-xs font-mono theme-subtle" data-i18n="sec_cert_sub">
+          Vérification académique et accréditations industrielles
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Official IBM Credentials -->
+        <div class="lg:col-span-6 space-y-4">
+          <h3 class="text-xs font-mono uppercase theme-muted tracking-wider font-semibold" data-i18n="h_ibm_certs">
+            Certifications Officielles IBM (Credly & Training)
+          </h3>
+
+          <div class="border theme-border theme-card rounded-lg divide-y theme-border">
+            
+            <div class="p-4 flex items-center justify-between">
+              <div class="space-y-0.5">
+                <div class="theme-heading font-medium text-sm">IBM Z Xplore — Advanced</div>
+                <div class="text-[11px] font-mono theme-subtle" data-i18n="cert_ibm_adv">Organisme : IBM / Credly · Validé en 06/2026</div>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 text-[10px] font-mono" data-i18n="badge_verified">
+                Badge vérifié
+              </span>
+            </div>
+
+            <div class="p-4 flex items-center justify-between">
+              <div class="space-y-0.5">
+                <div class="theme-heading font-medium text-sm">IBM i Ready</div>
+                <div class="text-[11px] font-mono theme-subtle" data-i18n="cert_ibm_ready">Organisme : IBM Training · Validé en 06/2026</div>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 text-[10px] font-mono" data-i18n="badge_accredited">
+                Accrédité
+              </span>
+            </div>
+
+            <div class="p-4 flex items-center justify-between">
+              <div class="space-y-0.5">
+                <div class="theme-heading font-medium text-sm">Getting Started with IBM i Development</div>
+                <div class="text-[11px] font-mono theme-subtle" data-i18n="cert_ibm_dev">Organisme : IBM Training · Validé en 06/2026</div>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 text-[10px] font-mono" data-i18n="badge_certified">
+                Certifié
+              </span>
+            </div>
+
+            <div class="p-4 flex items-center justify-between">
+              <div class="space-y-0.5">
+                <div class="theme-heading font-medium text-sm">IBM Z Xplore — Concepts</div>
+                <div class="text-[11px] font-mono theme-subtle" data-i18n="cert_ibm_conc">Organisme : IBM / Credly · Validé en 06/2026</div>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 text-[10px] font-mono" data-i18n="badge_verified">
+                Badge vérifié
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Academic Degrees -->
+        <div class="lg:col-span-6 space-y-4">
+          <h3 class="text-xs font-mono uppercase theme-muted tracking-wider font-semibold" data-i18n="h_academic">
+            Cursus Universitaire & Technique
+          </h3>
+
+          <div class="border theme-border theme-card rounded-lg divide-y theme-border">
+            
+            <div class="p-4 space-y-1">
+              <div class="flex items-center justify-between">
+                <div class="theme-heading font-medium text-sm">Master Professionnel — SAAICC</div>
+                <span class="text-xs font-mono theme-muted">2025 - 2026</span>
+              </div>
+              <div class="text-xs text-brand font-medium" data-i18n="deg_master_desc">Sécurité & Automatisation des Architectures Informatiques & Cloud Computing</div>
+              <div class="text-[11px] font-mono theme-subtle" data-i18n="deg_master_school">IT LEARNING, Casablanca · Diplôme d'État obtenu</div>
+            </div>
+
+            <div class="p-4 space-y-1">
+              <div class="flex items-center justify-between">
+                <div class="theme-heading font-medium text-sm">Licence Professionnelle — LPU DAWM</div>
+                <span class="text-xs font-mono theme-muted">2021 - 2022</span>
+              </div>
+              <div class="text-xs text-brand font-medium" data-i18n="deg_licence_desc">Développement des Applications Web et Technologies Mobiles</div>
+              <div class="text-[11px] font-mono theme-subtle" data-i18n="deg_licence_school">École Supérieure de Technologie (EST), Casablanca · Diplôme obtenu</div>
+            </div>
+
+            <div class="p-4 space-y-1">
+              <div class="flex items-center justify-between">
+                <div class="theme-heading font-medium text-sm">Diplôme de Technicien Spécialisé — TDI</div>
+                <span class="text-xs font-mono theme-muted">2018 - 2020</span>
+              </div>
+              <div class="text-xs text-brand font-medium" data-i18n="deg_dts_desc">Développement Informatique</div>
+              <div class="text-[11px] font-mono theme-subtle" data-i18n="deg_dts_school">ISTA NTIC, Settat · Diplôme obtenu</div>
+            </div>
+
+            <div class="p-4 space-y-1">
+              <div class="flex items-center justify-between">
+                <div class="theme-heading font-medium text-sm" data-i18n="deg_bac_title">Baccalauréat — Systèmes Électroniques Numériques (SEN)</div>
+                <span class="text-xs font-mono theme-muted">2018</span>
+              </div>
+              <div class="text-[11px] font-mono theme-subtle" data-i18n="deg_bac_school">Lycée Technique, Settat · Diplôme obtenu</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 05: CONTACT DIRECT & DOCUMENTS TÉLÉCHARGEABLES            -->
+    <!-- ================================================================= -->
+    <section id="contact" class="border theme-border theme-card rounded-lg p-8 sm:p-12 space-y-8">
+      
+      <div class="max-w-2xl space-y-3">
+        <span class="text-xs font-mono text-brand block uppercase tracking-wider font-semibold" data-i18n="sec_contact_tag">05 / PRISE DE CONTACT</span>
+        <h2 class="text-2xl sm:text-3xl font-bold theme-heading tracking-tight" data-i18n="sec_contact_title">
+          Disponible pour étudier vos projets applicatifs IBM i.
+        </h2>
+        <p class="text-sm theme-muted leading-relaxed" data-i18n="sec_contact_sub">
+          Que ce soit pour le renforcement d'une équipe IBM i, la maintenance évolutive d'applications de gestion financière (Paie, Trésorerie, Comptabilité) ou un audit de règles métiers.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs">
+        
+        <!-- Email Direct -->
+        <div class="p-4 rounded border theme-border space-y-2" style="background-color: var(--bg-ground);">
+          <span class="theme-subtle block text-[10px]" data-i18n="lbl_direct_email">COURRIEL DIRECT</span>
+          <a href="mailto:elouardii.yassine@gmail.com" class="theme-heading hover:text-brand font-medium block truncate">
+            elouardii.yassine@gmail.com
+          </a>
+          <button 
+            id="copy-email-btn"
+            onclick="copyEmailAddress()"
+            class="text-[11px] text-brand hover:underline block pt-1 text-left"
+            data-i18n="btn_copy_email"
+          >
+            Copier l'adresse
+          </button>
+        </div>
+
+        <!-- Phone Direct -->
+        <div class="p-4 rounded border theme-border space-y-2" style="background-color: var(--bg-ground);">
+          <span class="theme-subtle block text-[10px]" data-i18n="lbl_direct_phone">TÉLÉPHONE / WHATSAPP</span>
+          <a href="tel:+212617207146" class="theme-heading hover:text-brand font-medium block">
+            +212 6 17 20 71 46
+          </a>
+          <span class="text-[11px] theme-subtle block pt-1" data-i18n="card_location">Casablanca, Maroc</span>
+        </div>
+
+        <!-- CV Officiel (PDF) -->
+        <div class="p-4 rounded border border-brand/50 hover:border-brand transition-colors space-y-2" style="background-color: var(--bg-ground);">
+          <span class="text-brand block text-[10px] font-semibold" data-i18n="lbl_cv_box">CURRICULUM VITAE</span>
+          <a 
+            href="./CV_Yassine_EL_Ouardi_Analyste_Developpeur_IBM_i_AS400.pdf" 
+            download="CV_Yassine_EL_Ouardi_IBM_i.pdf" 
+            class="theme-heading font-medium block truncate hover:underline"
+            data-i18n="lbl_cv_link"
+          >
+            CV Complet (PDF)
+          </a>
+          <a 
+            href="./CV_Yassine_EL_Ouardi_Analyste_Developpeur_IBM_i_AS400.pdf" 
+            download="CV_Yassine_EL_Ouardi_IBM_i.pdf"
+            class="text-[11px] text-brand hover:underline inline-flex items-center gap-1 pt-1 font-semibold"
+            data-i18n="lbl_cv_dl"
+          >
+            Télécharger (16 Ko) &darr;
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Clean Minimalist Footer -->
+  <footer class="border-t theme-border py-8 text-xs font-mono theme-subtle" style="background-color: var(--bg-card);">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div data-i18n="footer_copy">
+        © 2026 Yassine EL OUARDI · Analyste Développeur IBM i / AS400 · Casablanca
+      </div>
+      <div class="flex items-center gap-4 theme-muted">
+        <a href="#profil" class="hover:text-brand" data-i18n="footer_top">Haut de page &uarr;</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/in/yassine-el-ouardi-as400/" target="_blank" rel="noopener noreferrer" class="hover:text-brand">LinkedIn</a>
+        <span>·</span>
+        <a href="mailto:elouardii.yassine@gmail.com" class="hover:text-brand" data-i18n="footer_contact">Contact direct</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- I18N DICTIONARY & COMPLETE TRANSLATION SCRIPT                     -->
+  <!-- ================================================================= -->
+  <script>
+    const translations = {
+      fr: {
+        page_title: "Yassine EL OUARDI — Analyste Développeur IBM i / AS400 | RPG Free · SQLRPGLE · DB2 for i",
+        meta_desc: "Portfolio technique de Yassine EL OUARDI, Analyste Développeur IBM i (RPG Free, SQLRPGLE, DB2 for i). Spécialiste applications de gestion financière (Paie, Trésorerie, Fiscalité RAS, Budgets).",
+        skip_link: "Passer directement au contenu principal",
+        banner_status_lbl: "Statut :",
+        banner_status_val: "Casablanca, Maroc · Ouvert aux opportunités d'ingénierie (CDI / Mission technique)",
+        banner_scope: "Périmètre : RPG Free · SQLRPGLE · DB2 for i · Finance",
+        nav_role: "Analyste Développeur IBM i",
+        nav_profile: "01. Profil",
+        nav_missions: "02. Réalisations",
+        nav_skills: "03. Compétences",
+        nav_certifications: "04. Certifications",
+        nav_contact: "05. Contact",
+        nav_cv_btn: "CV (PDF)",
+        hero_system: "SYSTÈME : IBM i / AS400",
+        hero_env: "ENVIRONNEMENT : PRODUCTION & FINANCE",
+        hero_title: "Développement d'applications de gestion critiques sur IBM i.",
+        hero_desc: "Analyste Développeur spécialisé dans les environnements financiers et de gestion (Paie, Trésorerie, Fiscalité RAS et Budgets étatiques). J'interviens de l'analyse fonctionnelle à la mise en exploitation : RPG Free Format, SQLRPGLE, DB2 for i, maintenance, tests et contrôles de cohérence des données.",
+        spec_title_role: "POSTE ACTUEL",
+        spec_val_role: "Analyste Développeur IBM i / RPG Free — SOMADSI (Casablanca)",
+        spec_title_exp: "EXPÉRIENCE CONCRÈTE",
+        spec_val_exp: "3+ années sur ERP de gestion, calculs fiscaux (RAS) & budget (OFPPT)",
+        spec_title_tech: "PARADIGME TECHNIQUE",
+        spec_val_tech: "RPG IV modulaire, ILE, embedded SQL, procédures libres, triggers DB2",
+        spec_title_edu: "FORMATION AVANCÉE",
+        spec_val_edu: "Master Pro SAAICC (Cloud & Sécurité) · Certifié IBM Z & IBM i",
+        btn_explore: "Consulter les réalisations techniques",
+        btn_download_cv: "Télécharger mon CV complet (PDF)",
+        btn_contact_me: "Me contacter",
+        card_location: "Casablanca, Maroc",
+        lbl_email: "Courriel :",
+        lbl_phone: "Tél :",
+        badge_ibm_verified: "Profil IBM vérifié",
+        link_linkedin: "Voir LinkedIn →",
+        sec_missions_tag: "02 / ÉTUDES DE CAS",
+        sec_missions_title: "Réalisations & Missions en Production",
+        sec_missions_sub: "Format : Contexte → Implémentation technique → Résultat mesurable",
+        m1_badge: "Mission Réglementaire & Fiscale",
+        m1_title: "Automatisation du Calcul de la Retenue à la Source (RAS) sur IBM i",
+        m1_h_ctx: "01. Contexte & Problématique",
+        m1_p_ctx: "Mise en conformité avec les nouvelles règles fiscales exigeant l'application d'un taux de retenue à la source distinct selon le statut juridique du bénéficiaire, la nature de la prestation et des seuils d'exonération spécifiques.",
+        m1_h_sol: "02. Solution Technique RPGLE",
+        m1_p_sol: "Développement d'une sous-procédure RPGLE dédiée et modulaire. Isolation de la logique fiscale, gestion rigoureuse des cas limites (arrondis, exonérations partielles, tiers multiples) et intégration directe dans la chaîne de facturation.",
+        m1_h_res: "03. Validation & Impact",
+        m1_p_res: "Élaboration d'un banc de test automatisé avec comparaison miroir contre un modèle de calcul indépendant. Recette validée sans réserve, zéro anomalie de déclaration et conformité fiscale certifiée.",
+        m2_badge: "Secteur Public & Gestion Budgétaire",
+        m2_title: "Refonte de la Nomenclature Budgétaire & Ordonnancement (OFPPT)",
+        m2_h_ctx: "01. Contexte & Problématique",
+        m2_p_ctx: "Transition structurelle vers une nouvelle nomenclature budgétaire étatique, imposant de requalifier l'ensemble des imputations financières sans bloquer les engagements de dépenses ni les ordres de paiement en cours.",
+        m2_h_sol: "02. Solution Technique RPGLE",
+        m2_p_sol: "Mise à jour des règles de gestion en RPG Free et SQLRPGLE. Création de scripts SQL de contrôle de cohérence pour auditer les tables DB2, identifier les écarts de clés budgétaires et générer les états comparatifs multi-exercices.",
+        m2_h_res: "03. Validation & Impact",
+        m2_p_res: "Fiabilisation à 100% des situations budgétaires périodiques et des ordonnancements de paiement. Validation complète par les contrôleurs de gestion et les responsables financiers.",
+        m3_badge: "Activité Continue (03/2023 - Présent)",
+        m3_title: "Maintenance Applicative & Optimisation ERP de Gestion (SOMADSI)",
+        m3_h_ctx: "01. Périmètre Métier",
+        m3_p_ctx: "Responsabilité du cycle de vie des modules applicatifs clés : Paie, Comptabilité générale et auxiliaire, Trésorerie, déclarations de TVA et facturation commerciale.",
+        m3_h_sol: "02. Interventions Techniques",
+        m3_p_sol: "Développement d'évolutions applicatives en RPG Free Format, optimisation des plans d'accès SQL pour les extractions de données lourdes, correction d'incidents de production et accompagnement des utilisateurs en recette.",
+        m3_h_res: "03. Bénéfice Opérationnel",
+        m3_p_res: "Réduction notable des délais de traitement des batchs de fin de mois, fiabilisation des clôtures périodiques et maintien d'un niveau élevé de disponibilité applicative.",
+        sec_skills_tag: "03 / QUALIFICATIONS",
+        sec_skills_title: "Environnement Technique & Domaines Métiers",
+        sec_skills_sub: "Référentiel des technologies et domaines de gestion maîtrisés",
+        sk_col1_tag: "01. Cœur IBM i / AS400",
+        sk_col1_title: "Architecture & Langages",
+        sk_col2_tag: "02. Domaines Métiers",
+        sk_col2_title: "Finance & Gestion",
+        sk_col3_tag: "03. Données & Outils",
+        sk_col3_title: "Bases & Reporting",
+        sk_col4_tag: "04. Écosystème Global",
+        sk_col4_title: "Langages & Méthodes",
+        lvl_expert: "Expertise",
+        lvl_advanced: "Avancé",
+        lvl_operational: "Opérationnel",
+        lvl_practiced: "Pratiqué",
+        lvl_mastered: "Maîtrisé",
+        lvl_fundamentals: "Bases",
+        lvl_specialized: "Spécialisé",
+        sk_cl: "CL / CLP (Commandes & Jobs)",
+        sk_sql_opt: "Optimisation requêtes SQL",
+        sk_prod_supp: "Support de production",
+        sk_payroll: "Paie & Cotisations sociales",
+        sk_ras: "Retenue à la source (RAS)",
+        sk_acct: "Comptabilité générale & aux.",
+        sk_treasury: "Trésorerie & Rapprochements",
+        sk_vat: "Déclarations TVA",
+        sk_budget: "Exécution budgétaire (OFPPT)",
+        sk_db2_integrity: "Contrôles d'intégrité DB2",
+        sk_budget_extract: "Extractions budgétaires",
+        sk_agile: "Méthodes Agile / Scrum",
+        sk_merise: "Modélisation Merise / UML",
+        sk_cloud: "Cloud & Sécurité (Master)",
+        sec_cert_tag: "04 / QUALIFICATIONS FORMELLES",
+        sec_cert_title: "Certifications IBM & Diplômes",
+        sec_cert_sub: "Vérification académique et accréditations industrielles",
+        h_ibm_certs: "Certifications Officielles IBM (Credly & Training)",
+        h_academic: "Cursus Universitaire & Technique",
+        cert_ibm_adv: "Organisme : IBM / Credly · Validé en 06/2026",
+        cert_ibm_ready: "Organisme : IBM Training · Validé en 06/2026",
+        cert_ibm_dev: "Organisme : IBM Training · Validé en 06/2026",
+        cert_ibm_conc: "Organisme : IBM / Credly · Validé en 06/2026",
+        badge_verified: "Badge vérifié",
+        badge_accredited: "Accrédité",
+        badge_certified: "Certifié",
+        deg_master_desc: "Sécurité & Automatisation des Architectures Informatiques & Cloud Computing",
+        deg_master_school: "IT LEARNING, Casablanca · Diplôme d'État obtenu",
+        deg_licence_desc: "Développement des Applications Web et Technologies Mobiles",
+        deg_licence_school: "École Supérieure de Technologie (EST), Casablanca · Diplôme obtenu",
+        deg_dts_desc: "Développement Informatique",
+        deg_dts_school: "ISTA NTIC, Settat · Diplôme obtenu",
+        deg_bac_title: "Baccalauréat — Systèmes Électroniques Numériques (SEN)",
+        deg_bac_school: "Lycée Technique, Settat · Diplôme obtenu",
+        sec_contact_tag: "05 / PRISE DE CONTACT",
+        sec_contact_title: "Disponible pour étudier vos projets applicatifs IBM i.",
+        sec_contact_sub: "Que ce soit pour le renforcement d'une équipe IBM i, la maintenance évolutive d'applications de gestion financière (Paie, Trésorerie, Comptabilité) ou un audit de règles métiers.",
+        lbl_direct_email: "COURRIEL DIRECT",
+        lbl_direct_phone: "TÉLÉPHONE / WHATSAPP",
+        lbl_cv_box: "CURRICULUM VITAE",
+        lbl_cv_link: "CV Complet (PDF)",
+        lbl_cv_dl: "Télécharger (16 Ko) ↓",
+        btn_copy_email: "Copier l'adresse",
+        btn_copied_msg: "Copié dans le presse-papier !",
+        footer_copy: "© 2026 Yassine EL OUARDI · Analyste Développeur IBM i / AS400 · Casablanca",
+        footer_top: "Haut de page ↑",
+        footer_contact: "Contact direct"
+      },
+      en: {
+        page_title: "Yassine EL OUARDI — IBM i / AS400 Analyst Developer | RPG Free · SQLRPGLE · DB2 for i",
+        meta_desc: "Technical portfolio of Yassine EL OUARDI, IBM i Analyst Developer (RPG Free, SQLRPGLE, DB2 for i). Specialist in financial management applications (Payroll, Treasury, WHT Taxation, Public Budgets).",
+        skip_link: "Skip directly to main content",
+        banner_status_lbl: "Status:",
+        banner_status_val: "Casablanca, Morocco · Open to engineering opportunities (Permanent / Contract)",
+        banner_scope: "Scope: RPG Free · SQLRPGLE · DB2 for i · Finance",
+        nav_role: "IBM i Analyst Developer",
+        nav_profile: "01. Profile",
+        nav_missions: "02. Projects",
+        nav_skills: "03. Skills",
+        nav_certifications: "04. Certifications",
+        nav_contact: "05. Contact",
+        nav_cv_btn: "Resume (PDF)",
+        hero_system: "SYSTEM: IBM i / AS400",
+        hero_env: "ENVIRONMENT: PRODUCTION & FINANCE",
+        hero_title: "Development of mission-critical business applications on IBM i.",
+        hero_desc: "Analyst Developer specializing in financial and enterprise management environments (Payroll, Treasury, Withholding Tax, and Public Budgets). Handling the complete lifecycle from functional analysis to production delivery: RPG Free Format, SQLRPGLE, DB2 for i, testing, and data integrity verification.",
+        spec_title_role: "CURRENT ROLE",
+        spec_val_role: "IBM i / RPG Free Analyst Developer — SOMADSI (Casablanca)",
+        spec_title_exp: "CORE EXPERIENCE",
+        spec_val_exp: "3+ years on enterprise ERPs, tax computation (WHT) & public budgeting (OFPPT)",
+        spec_title_tech: "TECHNICAL PARADIGM",
+        spec_val_tech: "Modular RPG IV, ILE, embedded SQL, free-form procedures, DB2 triggers",
+        spec_title_edu: "ADVANCED EDUCATION",
+        spec_val_edu: "Professional Master SAAICC (Cloud & Security) · IBM Z & IBM i Certified",
+        btn_explore: "Explore technical projects",
+        btn_download_cv: "Download full resume (PDF)",
+        btn_contact_me: "Get in touch",
+        card_location: "Casablanca, Morocco",
+        lbl_email: "Email:",
+        lbl_phone: "Phone:",
+        badge_ibm_verified: "Verified IBM Profile",
+        link_linkedin: "View LinkedIn →",
+        sec_missions_tag: "02 / CASE STUDIES",
+        sec_missions_title: "Production Projects & Deliverables",
+        sec_missions_sub: "Format: Context → Technical Implementation → Measurable Outcome",
+        m1_badge: "Regulatory & Tax Project",
+        m1_title: "Automated Withholding Tax (WHT) Computation on IBM i",
+        m1_h_ctx: "01. Context & Business Challenge",
+        m1_p_ctx: "Compliance with new tax regulations requiring differentiated withholding tax rates based on beneficiary legal entity type, service categories, and statutory exemption thresholds.",
+        m1_h_sol: "02. RPGLE Technical Solution",
+        m1_p_sol: "Design and development of a dedicated modular RPGLE subprocedure. Isolated fiscal logic, rigorous handling of boundary conditions (rounding, partial exemptions, multiple payees) and direct billing integration.",
+        m1_h_res: "03. Validation & Business Impact",
+        m1_p_res: "Created an automated test harness with mirror reconciliation against an independent calculation model. 100% accepted in UAT, zero audit discrepancy, guaranteed statutory compliance.",
+        m2_badge: "Public Sector & Budgeting",
+        m2_title: "Budgetary Nomenclature & Payment Scheduling Migration (OFPPT)",
+        m2_h_ctx: "01. Context & Business Challenge",
+        m2_p_ctx: "Structural transition toward new governmental budget nomenclature, requiring reclassification of all financial allocations without halting active spend commitments or ongoing payment orders.",
+        m2_h_sol: "02. RPGLE Technical Solution",
+        m2_p_sol: "Refactored business rules in RPG Free and SQLRPGLE. Created DB2 audit scripts to identify budget code discrepancies and generate multi-fiscal-year reconciliation statements.",
+        m2_h_res: "03. Validation & Impact",
+        m2_p_res: "100% data reliability achieved for periodic budget statements and payment disbursements. Full sign-off by management controllers and financial directors.",
+        m3_badge: "Ongoing Role (03/2023 - Present)",
+        m3_title: "Application Maintenance & Enterprise ERP Optimization (SOMADSI)",
+        m3_h_ctx: "01. Functional Scope",
+        m3_p_ctx: "Lifecycle ownership of mission-critical ERP modules: Payroll, General & Subsidiary Ledger, Treasury, VAT filings, and commercial invoicing.",
+        m3_h_sol: "02. Technical Interventions",
+        m3_p_sol: "Developed feature enhancements in RPG Free Format, tuned DB2 SQL query access paths for high-volume data extractions, resolved production incidents, and assisted users through UAT.",
+        m3_h_res: "03. Operational Benefit",
+        m3_p_res: "Substantial runtime reduction in month-end batch jobs, hardened periodic financial closings, and consistent high system uptime.",
+        sec_skills_tag: "03 / QUALIFICATIONS",
+        sec_skills_title: "Technical Stack & Business Domains",
+        sec_skills_sub: "Framework of mastered technologies and management domains",
+        sk_col1_tag: "01. Core IBM i / AS400",
+        sk_col1_title: "Architecture & Languages",
+        sk_col2_tag: "02. Business Domains",
+        sk_col2_title: "Finance & Management",
+        sk_col3_tag: "03. Data & Tools",
+        sk_col3_title: "Databases & Reporting",
+        sk_col4_tag: "04. Global Ecosystem",
+        sk_col4_title: "Languages & Methods",
+        lvl_expert: "Expertise",
+        lvl_advanced: "Advanced",
+        lvl_operational: "Operational",
+        lvl_practiced: "Practiced",
+        lvl_mastered: "Mastered",
+        lvl_fundamentals: "Foundations",
+        lvl_specialized: "Specialized",
+        sk_cl: "CL / CLP (Commands & Jobs)",
+        sk_sql_opt: "SQL Query Optimization",
+        sk_prod_supp: "Production Support",
+        sk_payroll: "Payroll & Social Contributions",
+        sk_ras: "Withholding Tax (WHT)",
+        sk_acct: "General & Sub Ledger Accounting",
+        sk_treasury: "Treasury & Reconciliations",
+        sk_vat: "VAT Filings & Reports",
+        sk_budget: "Budgetary Execution (OFPPT)",
+        sk_db2_integrity: "DB2 Integrity & Consistency Audits",
+        sk_budget_extract: "Budgetary Data Extractions",
+        sk_agile: "Agile / Scrum Methodologies",
+        sk_merise: "Merise & UML Data Modeling",
+        sk_cloud: "Cloud & Security (Master's)",
+        sec_cert_tag: "04 / FORMAL CREDENTIALS",
+        sec_cert_title: "IBM Certifications & Degrees",
+        sec_cert_sub: "Academic verification and industry accreditation",
+        h_ibm_certs: "Official IBM Certifications (Credly & Training)",
+        h_academic: "Academic & Technical Education",
+        cert_ibm_adv: "Issuer: IBM / Credly · Issued 06/2026",
+        cert_ibm_ready: "Issuer: IBM Training · Issued 06/2026",
+        cert_ibm_dev: "Issuer: IBM Training · Issued 06/2026",
+        cert_ibm_conc: "Issuer: IBM / Credly · Issued 06/2026",
+        badge_verified: "Verified badge",
+        badge_accredited: "Accredited",
+        badge_certified: "Certified",
+        deg_master_desc: "Security & Automation of IT Architectures & Cloud Computing",
+        deg_master_school: "IT LEARNING, Casablanca · State Degree Awarded",
+        deg_licence_desc: "Development of Web Applications and Mobile Technologies",
+        deg_licence_school: "École Supérieure de Technologie (EST), Casablanca · Degree Awarded",
+        deg_dts_desc: "Software Development Specialist",
+        deg_dts_school: "ISTA NTIC, Settat · Degree Awarded",
+        deg_bac_title: "Baccalaureate — Digital Electronic Systems (SEN)",
+        deg_bac_school: "Technical High School, Settat · Diploma Awarded",
+        sec_contact_tag: "05 / GET IN TOUCH",
+        sec_contact_title: "Available to discuss your IBM i application projects.",
+        sec_contact_sub: "Whether for strengthening an IBM i engineering team, maintaining mission-critical financial applications (Payroll, Treasury, Accounting), or auditing business rules.",
+        lbl_direct_email: "DIRECT EMAIL",
+        lbl_direct_phone: "PHONE / WHATSAPP",
+        lbl_cv_box: "CURRICULUM VITAE",
+        lbl_cv_link: "Complete Resume (PDF)",
+        lbl_cv_dl: "Download (16 KB) ↓",
+        btn_copy_email: "Copy address",
+        btn_copied_msg: "Copied to clipboard!",
+        footer_copy: "© 2026 Yassine EL OUARDI · IBM i / AS400 Analyst Developer · Casablanca",
+        footer_top: "Back to top ↑",
+        footer_contact: "Direct contact"
+      }
+    };
+
+    let currentLang = 'fr';
+    let currentTheme = 'dark';
+
+    // 1. Language Setter with Exhaustive DOM Sync
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      currentLang = lang;
+      localStorage.setItem('portfolio_lang', lang);
+      document.documentElement.lang = lang;
+
+      // Update Head Metadata
+      document.getElementById('meta-title').innerText = translations[lang].page_title;
+      document.getElementById('meta-desc').setAttribute('content', translations[lang].meta_desc);
+
+      // Update Every Element with data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key] !== undefined) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+
+      // Update Language Switcher UI State
+      const btnFr = document.getElementById('lang-btn-fr');
+      const btnEn = document.getElementById('lang-btn-en');
+      if (lang === 'fr') {
+        btnFr.className = "px-2 py-1 rounded font-semibold text-[11px] transition-all bg-brand text-white shadow-sm";
+        btnEn.className = "px-2 py-1 rounded font-semibold text-[11px] transition-all theme-muted hover:text-brand";
+      } else {
+        btnEn.className = "px-2 py-1 rounded font-semibold text-[11px] transition-all bg-brand text-white shadow-sm";
+        btnFr.className = "px-2 py-1 rounded font-semibold text-[11px] transition-all theme-muted hover:text-brand";
+      }
+    }
+
+    // 2. Dark / Light Theme Toggle
+    function applyTheme(theme) {
+      currentTheme = theme;
+      localStorage.setItem('portfolio_theme', theme);
+      const sunIcon = document.getElementById('icon-sun');
+      const moonIcon = document.getElementById('icon-moon');
+      const themeMeta = document.getElementById('theme-color-meta');
+
+      if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        sunIcon.classList.remove('block');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        moonIcon.classList.add('block');
+        if (themeMeta) themeMeta.setAttribute('content', '#f8fafc');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        sunIcon.classList.remove('hidden');
+        sunIcon.classList.add('block');
+        moonIcon.classList.remove('block');
+        moonIcon.classList.add('hidden');
+        if (themeMeta) themeMeta.setAttribute('content', '#090b10');
+      }
+    }
+
+    function toggleTheme() {
+      applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    }
+
+    // 3. Copy Email with feedback
+    function copyEmailAddress() {
+      navigator.clipboard.writeText('elouardii.yassine@gmail.com');
+      const btn = document.getElementById('copy-email-btn');
+      const original = translations[currentLang].btn_copy_email;
+      const copiedMsg = translations[currentLang].btn_copied_msg;
+      btn.innerText = copiedMsg;
+      setTimeout(() => {
+        btn.innerText = original;
+      }, 2200);
+    }
+
+    // 4. Initial Bootstrapping
+    document.addEventListener('DOMContentLoaded', () => {
+      // Init Language
+      const savedLang = localStorage.getItem('portfolio_lang');
+      if (savedLang && translations[savedLang]) {
+        setLanguage(savedLang);
+      } else {
+        setLanguage('fr');
+      }
+
+      // Init Theme
+      const savedTheme = localStorage.getItem('portfolio_theme');
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        applyTheme('light');
+      } else {
+        applyTheme('dark');
+      }
+    });
+  </script>
+
+</body>
+</html>
