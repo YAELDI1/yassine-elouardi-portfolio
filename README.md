@@ -38,13 +38,11 @@ Il vous suffit de :
 
 ---
 
-## 🌐 Déploiement en ligne gratuit (En 1 minute)
+## 🌐 Liens Officiels en Ligne
 
-### Option 1 : GitHub Pages (100% Gratuit)
-1. Créez un dépôt sur GitHub (ex: `portfolio-yassine`).
-2. Déposez-y les fichiers (`index.html`, votre photo, votre CV PDF, `public/`).
-3. Dans **Settings > Pages**, sélectionnez la branche `main` et cliquez sur **Save**.
-4. Votre portfolio sera accessible à l'adresse : `https://<votre-compte>.github.io/portfolio-yassine/`.
+- **Site Web en Production** : [https://yaeldi1.github.io/yassine-elouardi-portfolio/](https://yaeldi1.github.io/yassine-elouardi-portfolio/)
+- **Dépôt GitHub** : [https://github.com/YAELDI1/yassine-elouardi-portfolio](https://github.com/YAELDI1/yassine-elouardi-portfolio)
+- **Profil LinkedIn** : [https://www.linkedin.com/in/yassine-el-ouardi-as400/](https://www.linkedin.com/in/yassine-el-ouardi-as400/)
 
 ### Option 2 : Vercel ou Netlify (Glisser-Déposer)
 1. Rendez-vous sur [Netlify Drop](https://app.netlify.com/drop) ou [Vercel](https://vercel.com).
